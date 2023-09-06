@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Three stage carousel</title>
+    <style>
+        body {
+            background-color: #345;
+        }
+        .carousel {
+            
+            width: 850px;
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            overflow: hidden;
+        }
+        .carousel .slide {
+            width: 2600px;
+            transition: 1s;
+        }
+        .carousel .controls {
+            text-align: center;
+        }
+        .carousel .controls a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+        }
+        a:hover {
+            background-color: #234;
+            border-radius: 15px;
+        }
+        .carousel #first:target .slide {
+            transform: translateX(0px);
+        }
+        .carousel #second:target .slide {
+            transform: translateX(-850px);
+        }
+        .carousel #third:target .slide {
+            transform: translateX(-1700px);
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="carousel">
+        <div id="first">
+            <div id="second">
+                <div id="third">
+
+            <div class="slide">
+                <img src="https://fastly.picsum.photos/id/876/280/400.jpg?hmac=k13vS7268lAO_oHl1N7FKRK_H6YugfT0b_P_l0Y_sOc" alt="">
+                <img src="https://fastly.picsum.photos/id/276/280/400.jpg?hmac=3uQOpqtQGS1hH9wWpV7OALNiDJ-jVJvWd1FIDTO8fzo" alt="">
+                <img src="https://fastly.picsum.photos/id/577/280/400.jpg?hmac=1kLWdX7mPoOy-c8gVIWXlBze2a519Bmb7vKS7ZDCDbs" alt="">
+                <img src="https://fastly.picsum.photos/id/350/280/400.jpg?hmac=--_260FtxvTzsgTT52Du6r05babLqAobFw6A2NiKtA0" alt="">
+                <img src="https://fastly.picsum.photos/id/143/280/400.jpg?hmac=-TEkj1-CQqQQWuwRoLpmcd8uD6kahhaHbm-kzRUL8r4" alt="">
+                <img src="https://fastly.picsum.photos/id/880/280/400.jpg?hmac=igvW6Yel4ttDUISH3m6cQut9-W9ssCSShmGFc5dEWHE" alt="">
+                <img src="https://fastly.picsum.photos/id/400/280/400.jpg?hmac=0FKPDj0TZtS3m90oxdyW5NNnsoyvwA9dEhJXBBZ35uw" alt="">
+                <img src="https://fastly.picsum.photos/id/611/280/400.jpg?hmac=JBNcnMJjoPK0lSAh5aFLOACiGMXYzprRTERfuU3eCmo" alt="">
+                <img src="https://fastly.picsum.photos/id/107/280/400.jpg?hmac=SHjvZjQDWL-CYsZXkf7O1LKmgwBCOQ2zjLZ_N6yLu5Q" alt="">
+            </div>
+
+               </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <a href="#first">⦾</a>
+            <a href="#second">⦾</a>
+            <a href="#third">⦾</a>
+        </div>
+
+    </div>
+    
+</body>
+</html>

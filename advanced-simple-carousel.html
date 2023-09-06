@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two stage carousel | Advanced CSS Selector</title>
+    <style>
+        body {
+            background-color: #234;
+        }
+        .carousel {
+            width: 840px;
+
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+
+            overflow: hidden;
+
+            box-shadow: 0 0 10px 2px #111;
+        }
+        .carousel .slide {
+            width: 1800px;
+            transition: 1s;
+        }
+        .carousel .controls {
+            text-align: center;
+        }
+        .carousel .controls a {
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        .carousel #left:target .slide {
+            transform: translateX(0px);
+        }
+        .carousel #right:target .slide {
+            transform: translateX(-850px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="carousel">
+        <div id="left">
+            <div id="right">
+
+                <div class="slide">
+                    <img src="https://fastly.picsum.photos/id/880/280/400.jpg?hmac=igvW6Yel4ttDUISH3m6cQut9-W9ssCSShmGFc5dEWHE" alt="">
+                    <img src="https://fastly.picsum.photos/id/143/280/400.jpg?hmac=-TEkj1-CQqQQWuwRoLpmcd8uD6kahhaHbm-kzRUL8r4" alt="">
+                    <img src="https://fastly.picsum.photos/id/350/280/400.jpg?hmac=--_260FtxvTzsgTT52Du6r05babLqAobFw6A2NiKtA0" alt="">
+                    <img src="https://fastly.picsum.photos/id/577/280/400.jpg?hmac=1kLWdX7mPoOy-c8gVIWXlBze2a519Bmb7vKS7ZDCDbs" alt="">
+                    <img src="https://fastly.picsum.photos/id/276/280/400.jpg?hmac=3uQOpqtQGS1hH9wWpV7OALNiDJ-jVJvWd1FIDTO8fzo"  alt="">
+                    <img src="https://fastly.picsum.photos/id/876/280/400.jpg?hmac=k13vS7268lAO_oHl1N7FKRK_H6YugfT0b_P_l0Y_sOc" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="controls">
+            <a href="#left">←</a>
+            <a href="#right">→</a>
+        </div>
+    </div>
+    
+</body>
+</html>
